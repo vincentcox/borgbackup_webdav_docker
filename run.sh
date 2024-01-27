@@ -31,6 +31,7 @@ mount -t davfs $URL /mnt/webdrive -o uid=$FOLDER_USER,gid=users,dir_mode=755,fil
 #update borgmatic config file
 sed -i "s|REPO_NAME|$REPO_NAME|g" /etc/borgmatic/config.yaml
 
+## TODO: create initfile, and check if initfile exist, if so, skip next step. 
 #initialize borg repository
 ~/.local/bin/borgmatic init --encryption repokey
 
