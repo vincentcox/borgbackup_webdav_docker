@@ -1,5 +1,5 @@
 #!/bin/bash
-
+### Todo: check if config.yaml is still up to date with latest config values/parameters or template file. 
 #Check veriables or set defaults
 if [ -z ${WEBDRIVE_USER} ]; then
   echo "Webdrive user is not set"
